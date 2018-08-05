@@ -8,7 +8,7 @@ public class Hotel {
     private ArrayList <Bedroom> bedrooms;
     private ArrayList <Guest> guests;
     private ArrayList <Booking> bookings;
-    private Hashmap<Bedroom, ArrayList<Guest>> roomBookedbyd;
+//    private Hashmap<Bedroom, ArrayList<Guest>> roomBookedby;
 
 
 
@@ -19,7 +19,7 @@ public class Hotel {
         this.bedrooms = bedrooms;
         this.bookings = new ArrayList<>();
         this.guests = new ArrayList<>();
-        this.roomBookedby = new HashMap<Bedroom, ArrayList<Guest>>();
+//        this.roomBookedby = new HashMap<Bedroom, ArrayList<Guest>>();
     }
 
 

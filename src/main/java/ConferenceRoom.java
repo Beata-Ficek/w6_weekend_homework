@@ -1,12 +1,12 @@
+import java.util.ArrayList;
+
 public class ConferenceRoom extends Room {
 
     private boolean chargeable;
     private int dailyRate;
 
-    public ConferenceRoom (String name, int price, boolean chargeable, int dailyRate){
-        super(name, price);
-        this.name = name;
-        this.price = price;
+    public ConferenceRoom (int capacity, ArrayList<Guest> guests, int price, boolean chargeable, int dailyRate){
+        super(capacity, guests);
         this.chargeable = chargeable;
         this.dailyRate = dailyRate;
     }

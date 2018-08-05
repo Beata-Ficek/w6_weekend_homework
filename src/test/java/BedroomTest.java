@@ -10,7 +10,7 @@ public class BedroomTest {
 
     @Before
     public void before() {
-        VIP = new Bedroom(4, , BedroomType.QUAD, 600, true);
+        VIP = new Bedroom(4,, BedroomType.QUAD, 600, true);
     }
 
 

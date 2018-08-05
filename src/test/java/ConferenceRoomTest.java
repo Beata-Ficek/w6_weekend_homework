@@ -9,7 +9,7 @@ public class ConferenceRoomTest {
 
     @Before
     public void before(){
-        Main = new ConferenceRoom("Main", 40, true, 360);
+        Main = new ConferenceRoom( 20, 40, true, 360);
     }
 
     @Test
