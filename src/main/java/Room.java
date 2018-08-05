@@ -1,33 +1,28 @@
+import java.util.ArrayList;
+
 public abstract class Room {
 
-     String name;
-     int price;
+     int capacity;
+     ArrayList<Guest> guests;
 
-     public Room (String name, int price){
-         this.name = name;
-         this.price = price;
+     public Room (int capacity, ArrayList <Guest> guests){
+         this.capacity = capacity;
+         this.guests = new ArrayList<Guest>();
 
      }
 
-     public String getName() {
-         return this.name;
+     public int getCapacity() {
+         return this.capacity;
      }
 
-     public void setName(String name) {
-         this.name = name;
-     }
-
-
-     public int getPrice(){
-         return this.price;
-     }
-
-     public void setPrice(int price){
-         this.price = price;
+     public void setCapacity(int capacity) {
+         this.capacity = capacity;
      }
 
 
-
+     public ArrayList getGuestList(){
+         return this.guests;
+     }
 
 
 }

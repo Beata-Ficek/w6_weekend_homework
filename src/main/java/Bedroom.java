@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Bedroom extends Room {
 
     private int number;
@@ -6,9 +8,9 @@ public class Bedroom extends Room {
     private boolean chargeable;
 
 
-    public Bedroom (String name, int price, int number, BedroomType type, int nightlyRate, boolean chargeable) {
+    public Bedroom (int capacity, ArrayList<Guest> guests, int number, BedroomType type, int nightlyRate, boolean chargeable) {
 
-        super(name, price);
+        super(capacity, guests);
         this.number = number;
         this.type = type;
         this.nightlyRate = nightlyRate;
@@ -16,21 +18,6 @@ public class Bedroom extends Room {
 
     }
 
-    public String getName(){
-        return this.name;
-    }
-
-    public void setName(String name){
-        this.name = name;
-    }
-
-    public int getPrice(){
-        return this.price;
-    }
-
-    public void setPrice(int price){
-        this.price = price;
-    }
 
     public int getNumber(){
         return this.number;

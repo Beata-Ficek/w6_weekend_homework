@@ -10,30 +10,9 @@ public class BedroomTest {
 
     @Before
     public void before() {
-        VIP = new Bedroom("VIP", 400, 164, BedroomType.QUAD, 600, true);
+        VIP = new Bedroom(4, , BedroomType.QUAD, 600, true);
     }
 
-    @Test
-    public void roomHasName() {
-        assertEquals("VIP", VIP.getName());
-    }
-
-    @Test
-    public void canChangeName(){
-        VIP.setName("Paradise");
-        assertEquals("Paradise", VIP.getName());
-    }
-
-    @Test
-    public void roomHasPrice(){
-        assertEquals(400, VIP.getPrice());
-    }
-
-    @Test
-    public void canChangePrice(){
-        VIP.setPrice(450);
-        assertEquals(450, VIP.getPrice());
-    }
 
     @Test
     public void roomHasNumber(){
